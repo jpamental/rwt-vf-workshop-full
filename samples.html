@@ -1,0 +1,141 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+
+		<title>Responsive Type & Typography</title>
+		
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+		<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+
+		<!-- meta -->
+		<meta charset="utf-8">
+    <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="css/webfonts.css">
+    <link rel="stylesheet" href="css/vf_var_sample.css">
+		<!--[if lt IE 9]>
+			<script src="js/vendor/respond.min.js"></script>
+		<![endif]-->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/fontfaceobserver.js"></script>
+		<script type="text/javascript">
+				(function() {
+					document.documentElement.className += " wf-inactive"; 
+			
+					// Optimization for Repeat Views
+					if( sessionStorage.foutFontsLoaded ) {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+						return;
+					}
+			
+					var fontA = new FontFaceObserver('Amstelvar VF', {
+							weight: 400,
+							style: 'normal'
+						});
+						
+			
+					Promise.all([fontA.load()]).then(function () {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+			
+						// Optimization for Repeat Views
+						sessionStorage.foutFontsLoaded = true;
+					});
+				})();
+			</script>
+        
+    </head>
+    <body>
+
+        <!-- Add your site or application content here -->
+        <header role="banner" class="banner clearfix" id="banner">
+	        <div class="section-content">
+		        <div class="branding clearfix">
+		        </div>
+	        </div>
+        </header>
+
+        <main class="content-area clearfix">
+	        <div class="section-content">
+		        <article class="article-detail initial">
+
+              <p>Weight (font-weight: [number]):</p>
+              <h1 class="demo-wght-bold">Handglove</h1>
+
+
+              <p>Weight (font-variation-settings: 'wght' [number]):</p>
+              <h1 class="demo-wght">Handglove</h1>
+
+
+              <p>Width (font-stretch: [number]):</p>
+              <h1 class="demo-wdth-stretch">Handglove</h1>
+
+
+              <p>Width (font-variation-settings: 'wdth' [number]):</p>
+              <h1 class="demo-wdth">Handglove</h1>
+
+
+              <p>Slant (font-variation-settings: 'slnt' 20):</p>
+              <h1 class="demo-slnt">Handglove</h1>
+
+
+              <p>Slant (font-style: oblique 20deg):</p>
+              <h1 class="demo-slnt-oblique">Handglove</h1>
+
+
+              <p>Italic:</p>
+              <h1 class="demo-ital">Handglove</h1>
+
+
+              <p>Optical size:</p>
+              <h1 class="demo-opsz">Handglove</h1>
+
+
+              <p>Grade:</p>
+              <h1 class="demo-grad">Handglove</h1>
+
+
+              <p>Ascender/Descender:</p>
+              <h1 class="demo-ascdesc">Handglove</h1>
+
+
+              <h1 class="demo-mayhem">Handglove </h1>
+
+
+              <p>Viewport:</p>
+              <h1 class="demo-viewport">Moby Dick, or The White Whale </h1>
+
+
+              <button class="demo-button">handglove</button>
+
+
+              <h1 class="space">&nbsp;</h1>
+
+		        </article>
+	        </div><!--/.section-content-->
+        </main>
+        <footer id="footer" class="footer clearfix" role="contentinfo">
+	        <div class="section-content">
+	        	<div class="footer-contact h-card">
+
+	        	</div>
+	        </div><!--/.section-content-->
+        </footer>
+
+
+
+
+    <!-- Widowtamer -->
+    <script src="js/vendor/widowtamer-min.js" defer></script>
+
+    <script src="js/main.js" defer></script>
+
+    </body>
+</html>

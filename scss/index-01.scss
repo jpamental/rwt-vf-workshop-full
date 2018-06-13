@@ -1,0 +1,245 @@
+:root {
+
+  /* Breakpoint variables */
+  --bp-small: 24.15;
+  --bp-medium: 43.75;
+  --bp-large: 60.25;
+  --bp-xlarge: 75;
+
+  /* text GRAD */
+  --text-GRAD: 88;
+  
+  /* Paragraph variables */
+  --p-line-height-min: 1.15;
+  --p-line-height-max: 1.5;
+  --p-font-size-min: 1.0;
+  --p-font-size-max: 1.25;
+  --p-vf-wght: 350;
+  --p-vf-wdth: 100;
+
+  /* H1 variables */
+  --h1-line-height-min: .95;
+  --h1-line-height-max: 1.05;
+  --h1-font-size-min: 2.0;
+  --h1-font-size-max: 5;
+  --h1-vf-wght-multiplier-s: 2;
+  --h1-vf-wght-multiplier-m: 2.25;
+  --h1-vf-wght-multiplier-l: 2.5;
+  --h1-vf-wdth: 100;
+
+  /* H2 variables */
+  --h2-line-height-min: 1.15;
+  --h2-line-height-max: 1.25;
+  --h2-font-size-min: 1.5;
+  --h2-font-size-max: 3.5;
+  --h2-vf-wght-multiplier-s: 1.25;
+  --h2-vf-wght-multiplier-m: 1.5;
+  --h2-vf-wght-multiplier-l: 1.75;
+  --h2-vf-wdth: 100;
+
+  /* Dropcap variables */
+  --dc-line-height-min: .9;
+  --dc-line-height-max: .95;
+  --dc-font-size-min: 2.7;
+  --dc-font-size-max: 5;
+
+  /* Blockquote variables */
+  --bq-line-height-min: 1.1;
+  --bq-line-height-max: .95;
+  --bq-font-size-min: 2.7;
+  --bq-font-size-max: 5;
+}
+
+.graded {
+  --text-GRAD: 150;
+}
+
+/* Undo some of the Layout width bits */
+.section-content {
+	margin: 0 auto;
+	padding: 0 0.5em;
+}
+	@media only screen and (min-width: 24.15em) {
+	    .section-content {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 43.75em) {
+	    .section-content {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 60.25em) {
+	    .section-content {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 75em) {
+	    .section-content {
+		    max-width: 98em;
+	    }
+	}
+
+
+html {
+  background-color: #fbfbf6;
+  color: #3c3d31;
+  font-size: 100%;
+}
+
+body {
+  padding-top: 5rem;
+}
+
+body, 
+p, 
+th, 
+td, 
+ul, 
+li {
+	font-family: "Amstelvar 1.1 VF", Georgia, "New Times Roman", serif;
+	font-weight: normal;
+  font-style: normal;
+}
+
+.inverse {
+  background-color: #3c3d31;
+  color: #fbfbf6;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 38em;
+	transition: all linear 0.2s;
+  hyphens: auto;
+}
+
+/* Variations and variables */
+p {
+
+}
+
+
+/* Generic header styles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Amstelvar 1.1 VF", Georgia, "New Times Roman", serif;
+}
+
+h1 {
+	font-family: "Amstelvar 1.1 VF", Georgia, "New Times Roman", serif;
+  font-size: calc( var(--h1-font-size-min) * 1em );
+  margin: 1rem auto;
+  max-width: 50rem;
+}
+
+
+
+
+
+h2 {
+	font-family: "Amstelvar 1.1 VF", Georgia, "New Times Roman", serif;
+  font-size: calc( var(--h2-font-size-min) * 1em );
+  margin: 0 auto 2rem auto;
+  max-width: 50rem;
+	.inverse & {
+    --text-GRAD: 100;
+	}
+}
+
+blockquote {
+  float: right;
+	font-family: "Amstelvar 1.1 VF", Georgia, "New Times Roman", serif;
+  margin: 0 5vw 1rem .5rem;
+  max-width: 45vw;
+	transition: all linear 0.2s; 
+	&.right {
+  	float: right;
+  	margin-left: .5rem;
+  	margin-right: 5vw;
+	}	
+	&.left {
+  	float: left;
+  	margin-left: 5vw;
+  	margin-right: .5rem;
+	}	
+	.well-used {
+  	font-size: 1.25em;
+	}
+	.invisible {
+  	font-size: 1.5em;
+	}
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+h2 + p {
+  margin-top: 1em;
+}
+
+/* Section end styles */
+.section-end:after {
+  color: #777;
+	content: "\00a7";
+	display: block;
+	font-family: Georgia, "New Times Roman", serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-top: 1em;
+	text-align: center;
+}
+
+/* First-line styles */
+.article-detail > p:first-of-type:first-line {
+	font-family: "Amstelvar 1.1 VF", Georgia, "New Times Roman", serif;
+}
+
+/* Initial Cap styles */
+.article-detail.initial p:first-of-type:first-letter {
+	float: left; 
+	padding-right: 0.05em; 
+	font-family: "Amstelvar 1.1 VF", Georgia, "New Times Roman", serif;
+	font-size: 4em; 
+	line-height: .95;
+	margin-bottom: -.1em; 
+}
+
+/* Content end styles */
+.content-area p:last-child:after {
+  color: #777;
+	content: "\2766";
+	display: block;
+	font-family: Georgia, "New Times Roman", serif;
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: 300;
+	line-height: .75;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+/* Goblet and max-width wrapper */
+.figure-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 38em;
+}
+
+/* CSS shape outline for the goblet */
+.goblet {
+  float: left;
+  margin: 0 1.5rem 0 0;
+  width: 25%;
+  @media screen and (min-width: 60.25em) {
+    margin: 0 1.5rem 0 -17.5%;
+    width: 35%;
+  }
+}

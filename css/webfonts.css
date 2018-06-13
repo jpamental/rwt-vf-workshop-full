@@ -1,0 +1,77 @@
+/* Amstelvar Variable Font */
+@font-face {
+  font-family: "Amstelvar VF";
+  src: url('../fonts/AmstelvarAlpha-VF.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amstelvar 1.1 VF";
+  src: url('../fonts/AmstelvarAlpha-VF_v1.1.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plex Serif";
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/plex-serif/IBMPlexSerif-Regular.woff2') format('woff'); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Plex Serif";
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/plex-serif/IBMPlexSerif-Bold.woff2') format('woff'); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Plex Serif";
+  font-style: italic;
+  font-weight: normal;
+  src: url('../fonts/plex-serif/IBMPlexSerif-Italic.woff2') format('woff'); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "Plex Serif";
+  font-style: italic;
+  font-weight: bold;
+  src: url('../fonts/plex-serif/IBMPlexSerif-BoldItalic.woff2') format('woff'); /* Modern Browsers */
+}
+
+/* Decovar Variable Font */
+@font-face {
+  font-family: "Decovar VF";
+  src: url('../fonts/DecovarAlpha-VF.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Output Variable Font */
+@font-face {
+  font-family: 'Output Sans VF'; 
+  src: url('http://rwt.io/_demo_fonts/output/Output_Sans-VF.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Louvette Variable Font BETA */
+@font-face {
+  font-family: 'Louvette VF';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Var.woff2') format('woff2'), /* Super Modern Browsers */
+       url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Var.woff') format('woff'), /* Modern Browsers */
+       url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Var.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
+}
+
+/* Louvette Variable Font Italic BETA */
+@font-face {
+  font-family: 'Louvette VF';
+  font-style: italic;
+  font-weight: 400;
+  src: url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Italic_Var.woff2') format('woff2'), /* Super Modern Browsers */
+       url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Italic_Var.woff') format('woff'), /* Modern Browsers */
+       url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Italic_Var.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
+}

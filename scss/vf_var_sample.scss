@@ -1,0 +1,490 @@
+:root {
+
+  /* Breakpoint variables */
+  --bp-small: 24.15;
+  --bp-medium: 43.75;
+  --bp-large: 60.25;
+  --bp-xlarge: 75;
+
+  /* Paragraph variables */
+  --p-line-height-min: 1.15;
+  --p-line-height-max: 1.5;
+  --p-font-size-min: 1.0;
+  --p-font-size-max: 1.25;
+  --p-vf-wght: 350;
+
+  /* H1 variables */
+  --h1-line-height-min: 1;
+  --h1-line-height-max: 1.25;
+  --h1-font-size-min: 5;
+  --h1-font-size-max: 10;
+  --h1-vf-wght-multiplier-s: 2.5;
+  --h1-vf-wght-multiplier-m: 2.75;
+  --h1-vf-wght-multiplier-l: 3;
+
+  --wght-multiplier: 1;
+}
+
+
+/* Undo some of the Layout width bits */
+.section-content {
+	margin: 0 auto;
+	padding: 0 0.5em;
+}
+	@media only screen and (min-width: calc( var(--bp-small) * 1em )) {
+	    .section-content {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 43.75em) {
+	    .section-content {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 56.25em) {
+	    .section-content {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 71.875em) {
+	    .section-content {
+		    max-width: 98em;
+	    }
+	}
+	
+	@media only screen and (min-width: 81.25em) {
+	    .section-content {
+		    max-width: 98em;
+	    }
+	}
+
+
+
+
+html {
+  font-size: 100%;
+  background-color: #E9DEC0;
+}
+
+
+body, 
+p, 
+th, 
+td, 
+ul, 
+li {
+	font-family: "Amstelvar 1.1 VF", Georgia, "New Times Roman", serif;
+	font-weight: normal;
+  font-feature-settings: "liga" 1, "kern" 1;
+  font-style: normal;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+/* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
+ -ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
+}
+
+/* Variations for font size and line height */
+p {
+  font-size: calc( var(--p-font-size-min) * 1rem );
+  font-variation-settings: 
+      'wght' var(--p-vf-wght), 
+      'wdth' 100, 
+      'opsz' calc( var(--p-font-size-max) * 16 ), 
+      'grad' 88;
+  line-height: var(--p-line-height-min);
+  max-width: 57.5em;
+	transition: all linear 0.2s; 	
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #3E4F6B;
+	font-family: "Amstelvar 1.1 VF", Georgia, "New Times Roman", serif;
+  font-variation-settings: 
+    'wght' 600, 
+    'wdth' 100, 
+    'opsz' 24, 
+    'grad' 88;
+  font-weight: normal;
+	transition: all linear 0.75s; 	
+}
+
+h1,
+button {
+	font-family: "Amstelvar 1.1 VF", Georgia, "New Times Roman", serif;
+  font-size: calc( var(--h1-font-size-max) * 1em );
+  font-variation-settings: 
+    'wght' calc( var(--p-vf-wght) * var(--h1-vf-wght-multiplier-l) ), 
+    'wdth' 100, 
+    'YTLC' 500,
+    'YTAS' 750,
+    'YTDE' 250,
+    'YTUC' 750,
+    'opsz' calc( var(--h1-font-size-max) * 16 ), 
+    'grad' 88;
+  line-height: calc( var(--h1-line-height-max) * 1em);
+  margin: 0 auto 1em auto;
+  max-width: 57.5rem;
+  padding: 0 0 3rem 0;
+  &.demo-wght-bold {
+    font-weight: calc( var(--p-vf-wght) * var(--wght-multiplier) );
+    font-variation-settings: 
+      'wdth' 100, 
+      'YTLC' 500,
+      'YTAS' 750,
+      'YTDE' 250,
+      'YTUC' 750,
+      'opsz' calc( var(--h1-font-size-max) * 16 ), 
+      'grad' 88;
+    &:hover {
+      font-weight: calc( var(--p-vf-wght) * var(--h1-vf-wght-multiplier-l) );
+      font-variation-settings: 
+        'wdth' 100, 
+        'YTLC' 500,
+        'YTAS' 750,
+        'YTDE' 250,
+        'YTUC' 750,
+        'opsz' calc( var(--h1-font-size-max) * 16 ), 
+        'grad' 88;
+    }
+  }
+  &.demo-wght {
+    font-variation-settings: 
+      'wght' calc( var(--p-vf-wght) * var(--wght-multiplier) ), 
+      'wdth' 100, 
+      'YTLC' 500,
+      'YTAS' 750,
+      'YTDE' 250,
+      'YTUC' 750,
+      'opsz' calc( var(--h1-font-size-max) * 16 ), 
+      'grad' 88;
+    &:hover {
+      font-variation-settings: 
+        'wght' calc( var(--p-vf-wght) * var(--h1-vf-wght-multiplier-l) ), 
+        'wdth' 100, 
+        'YTLC' 500,
+        'YTAS' 750,
+        'YTDE' 250,
+        'YTUC' 750,
+        'opsz' calc( var(--h1-font-size-max) * 16 ), 
+        'grad' 88;
+    }
+  }
+  &.demo-wdth-stretch {
+    font-stretch: 75;
+    font-variation-settings: 
+      'wght' 500, 
+      'YTLC' 500,
+      'YTAS' 750,
+      'YTDE' 250,
+      'YTUC' 750,
+      'opsz' calc( var(--h1-font-size-max) * 16 ), 
+      'grad' 88;
+    &:hover {
+      font-stretch: 100;
+      font-variation-settings: 
+        'wght' 500, 
+        'YTLC' 500,
+        'YTAS' 750,
+        'YTDE' 250,
+        'YTUC' 750,
+        'opsz' calc( var(--h1-font-size-max) * 16 ), 
+        'grad' 88;
+    }
+  }
+  &.demo-wdth {
+    font-variation-settings: 
+      'wght' 500, 
+      'wdth' 75, 
+      'YTLC' 500,
+      'YTAS' 750,
+      'YTDE' 250,
+      'YTUC' 750,
+      'opsz' calc( var(--h1-font-size-max) * 16 ), 
+      'grad' 88;
+    &:hover {
+      font-variation-settings: 
+        'wght' 500, 
+        'wdth' 100, 
+        'YTLC' 500,
+        'YTAS' 750,
+        'YTDE' 250,
+        'YTUC' 750,
+        'opsz' calc( var(--h1-font-size-max) * 16 ), 
+        'grad' 88;
+    }
+  }
+  &.demo-slnt {
+    font-family: "Output Sans VF";
+    font-variation-settings: 
+      'wght' 250, 
+      'opsz' calc( var(--h1-font-size-max) * 16 ), 
+      'slnt' 0;
+    &:hover {
+      font-variation-settings: 
+        'wght' 250, 
+        'opsz' calc( var(--h1-font-size-max) * 16 ), 
+        'slnt' 1000;
+    }
+  }
+  &.demo-slnt-oblique {
+    font-family: "Output Sans VF";
+    font-style: oblique 0deg;
+    font-variation-settings: 
+      'wght' 250, 
+      'opsz' calc( var(--h1-font-size-max) * 16 );
+    &:hover {
+      font-style: oblique 20deg;
+      font-variation-settings: 
+        'wght' 250, 
+        'opsz' calc( var(--h1-font-size-max) * 16 );
+    }
+  }
+  &.demo-ital {
+    font-family: "Louvette VF";
+    font-variation-settings: 
+      'wght' 300, 
+      'opsz' calc( var(--h1-font-size-max) * 16 );
+    &:hover {
+      font-style: italic;
+      font-variation-settings: 
+        'wght' 300, 
+        'opsz' calc( var(--h1-font-size-max) * 16 );
+    }
+  }
+  &.demo-opsz {
+    font-size: calc( var(--h1-font-size-min) * 1em );
+    font-variation-settings: 
+      'wght' 400, 
+      'wdth' 100, 
+      'YTLC' 500,
+      'YTAS' 750,
+      'YTDE' 250,
+      'YTUC' 750,
+      'opsz' 12, 
+      'grad' 88;
+    vertical-align: baseline;
+    &:hover {
+      font-size: calc( var(--h1-font-size-max) * 1em );
+      font-variation-settings: 
+        'wght' 400, 
+        'wdth' 100, 
+        'YTLC' 500,
+        'YTAS' 750,
+        'YTDE' 250,
+        'YTUC' 750,
+        'opsz' 72, 
+        'grad' 88;
+    }
+  }
+  &.demo-grad {
+    font-variation-settings: 
+      'wght' 600, 
+      'wdth' 100, 
+      'YTLC' 500,
+      'YTAS' 750,
+      'YTDE' 250,
+      'YTUC' 750,
+      'opsz' 24, 
+      'GRAD' 88;
+    &:hover {
+      font-variation-settings: 
+        'wght' 600, 
+        'wdth' 100, 
+        'YTLC' 500,
+        'YTAS' 750,
+        'YTDE' 250,
+        'YTUC' 750,
+        'opsz' 24, 
+        'GRAD' 150;
+    }
+  }
+  &.demo-ascdesc {
+    font-variation-settings: 
+      'wght' 500, 
+      'wdth' 100, 
+      'YTLC' 500,
+      'YTAS' 750,
+      'YTDE' 250,
+      'YTUC' 750,
+      'opsz' 60, 
+      'grad' 88;
+    &:hover {
+      font-variation-settings: 
+        'wght' 500, 
+        'wdth' 100, 
+        'YTLC' 500,
+        'YTAS' 680,
+        'YTDE' 190,
+        'YTUC' 750,
+        'opsz' 60, 
+        'grad' 88;
+    }
+  }
+  &.demo-mayhem {
+    font-family: "Decovar VF";
+    font-size: 9em;
+    font-variation-settings: 
+      'BLDA' 0, 
+      'TRMD' 0, 
+      'TRMC' 0, 
+      'SKLD' 0, 
+      'TRML' 0, 
+      'SKLA' 0, 
+      'TRMF' 0, 
+      'TRMK' 0, 
+      'BLDB' 0, 
+      'WMX2' 900, 
+      'TRMB' 0, 
+      'TRMA' 0, 
+      'SKLB' 0, 
+      'TRMG' 0, 
+      'TRME' 0;
+    &:hover {
+      font-variation-settings: 
+        'BLDA' 0, 
+        'TRMD' 0, 
+        'TRMC' 750, 
+        'SKLD' 0, 
+        'TRML' 250, 
+        'SKLA' 1000, 
+        'TRMF' 250, 
+        'TRMK' 250, 
+        'BLDB' 1000, 
+        'WMX2' 750, 
+        'TRMB' 500, 
+        'TRMA' 500, 
+        'SKLB' 1000, 
+        'TRMG' 750, 
+        'TRME' 500;
+    }
+  }
+  &.demo-viewport {
+    --h1-font-size-max: 7;
+    font-size: 2.5vw;
+    font-variation-settings: 
+      'wght' calc( var(--p-vf-wght) * var(--h1-vf-wght-multiplier-l) ), 
+      'wdth' 100, 
+      'YTLC' 500,
+      'YTAS' 750,
+      'YTDE' 250,
+      'YTUC' 750,
+      'opsz' calc( var(--h1-font-size-max) * 16 ), 
+      'grad' 88;
+    margin-left: 5%;
+    max-width: 25vw;
+    border: solid 5px;
+    border-radius: 2rem;
+    padding: 3rem 1rem 1rem 1rem;
+    height: 30rem;
+    &:hover {
+      border-radius: 1rem;
+      font-size: 9vw;
+      font-variation-settings: 
+        'wght' calc( var(--p-vf-wght) * var(--h1-vf-wght-multiplier-l) ), 
+        'wdth' 100, 
+        'YTLC' 500,
+        'YTAS' 750,
+        'YTDE' 250,
+        'YTUC' 750,
+        'opsz' calc( var(--h1-font-size-max) * 16 ), 
+        'grad' 88;
+      height: 35rem;
+      max-width: 90vw
+    }
+  }
+  &.demo-button {
+	  transition: all linear 0.5s; 	
+    padding: .5em 1em;
+    border-radius: .25em;
+    max-width: none;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom, #e1e1f1 0%,#d9d9e9 34%,#b1b1c1 100%);
+      font-variation-settings: 
+      'wght' 600, 
+      'wdth' 100, 
+      'YTLC' 500,
+      'YTAS' 750,
+      'YTDE' 250,
+      'YTUC' 750,
+      'opsz' 60, 
+      'GRAD' 88;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: .25em;
+      background: linear-gradient(to bottom, #b1b1c1 0%,#a9a9b9 34%,#818191 100%);
+      z-index: -1;
+      transition: opacity 0.5s linear;
+      opacity: 0;
+    }
+    &:hover {
+      cursor: pointer;
+      font-variation-settings: 
+        'wght' 600, 
+        'wdth' 100, 
+        'YTLC' 500,
+        'YTAS' 750,
+        'YTDE' 250,
+        'YTUC' 750,
+        'opsz' 60, 
+        'GRAD' 150;
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
+.demo-wght {
+  //animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    --wght-multiplier: 1;
+  }
+  70% {
+    --wght-multiplier: 2;
+  }
+  100% {
+    --wght-multiplier: 3;
+  }
+}
+@keyframes pulse {
+  0% {
+    --wght-multiplier: 1;
+  }
+  70% {
+    --wght-multiplier: 2;
+  }
+  100% {
+    --wght-multiplier: 3;
+  }
+}
+
+
+

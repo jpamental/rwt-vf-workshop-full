@@ -1,0 +1,25 @@
+{
+  "name": "rwt-vf-workshop-short",
+  "version": "1.0.0",
+  "description": "Variable Font typography demo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.7.12",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.1",
+    "gulp-if": "^2.0.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "run-sequence": "^1.1.2"
+  }
+}
