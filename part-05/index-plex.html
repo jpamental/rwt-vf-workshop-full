@@ -17,13 +17,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta http-equiv="cleartype" content="on">
     
-    <link rel="stylesheet" href="css/webfonts.css">
-    <link rel="stylesheet" href="css/rwt_vf_styles_plex.css">
-    <!--[if lt IE 9]>
-    	<script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="js/vendor/fontfaceobserver.js"></script>
+    <link rel="stylesheet" href="../css/webfonts.css">
+    <link rel="stylesheet" href="../css/05-plex-styles.css">
+
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../js/vendor/fontfaceobserver.js"></script>
     <script type="text/javascript">
   		(function() {
   			document.documentElement.className += " wf-inactive"; 
@@ -53,8 +51,7 @@
   <body class="plex">
   
   	<!-- BEGIN feature toggles -->
-  	<a href="#" id="toggle-text-inverse" class="toggle-text-inverse button off">Color Inverse</a>
-  	<a href="#" id="toggle-ot-features" class="toggle-ot-features button on">OT Features</a>
+  	<a href="#" id="toggle-web-fonts" class="toggle-web-fonts button on">Web Fonts</a>
   	<style>
   		.button {
   		  font-size: 1rem;
@@ -82,34 +79,21 @@
           'opsz' 16, 
           'GRAD' 150;
   		}
-  		.toggle-text-inverse {
+  		.toggle-web-fonts {
   		  position: fixed; 
   		  top: 0.5em; 
   		  right: 8em; 
   		  z-index: 999;
   		}
   		@media (min-width: 30em) {
-  			.toggle-text-inverse {
+  			.toggle-web-fonts {
   			    right: 0.5em; 
   			}
   		}
-  		.toggle-ot-features {
-  		  position: fixed; 
-  		  top: 0.5em; 
-  		  right: 0.5em; 
-  		  z-index: 999;
-  		}
-  		@media (min-width: 30em) {
-  			.toggle-ot-features {
-  			    top: 2.75em; 
-  			}
-  		}
-  		.toggle-text-inverse.on:after, 
-  		.toggle-ot-features.on:after {
+  		.toggle-web-fonts.on:after {
   		  content: ": on";
   		}
-  		.toggle-text-inverse.off:after, 
-  		.toggle-ot-features.off:after {
+  		.toggle-web-fonts.off:after {
   		  content: ": off";
   		}
   	</style>
@@ -119,17 +103,12 @@
         document.getElementById('c-unsupported').classList.remove('hidden');
         document.getElementById('execute').setAttribute('disabled', 'disabled');
       } else {
-        document.getElementById('toggle-text-inverse').addEventListener('click', function(e) {
+        document.getElementById('toggle-web-fonts').addEventListener('click', function(e) {
           e.preventDefault();
-          document.getElementById('toggle-text-inverse').classList.toggle('on');
-          document.getElementById('toggle-text-inverse').classList.toggle('off');
-          document.getElementsByTagName("html")[0].classList.toggle('inverse');
-        });
-        document.getElementById('toggle-ot-features').addEventListener('click', function(e) {
-          e.preventDefault();
-        	document.getElementById('toggle-ot-features').classList.toggle('on');
-        	document.getElementById('toggle-ot-features').classList.toggle('off');
-        	document.getElementsByTagName("html")[0].classList.toggle('ot-off');
+          document.getElementById('toggle-web-fonts').classList.toggle('on');
+          document.getElementById('toggle-web-fonts').classList.toggle('off');
+          document.getElementsByTagName("html")[0].classList.toggle('wf-inactive');
+          document.getElementsByTagName("html")[0].classList.toggle('wf-active');
         });
       }
     </script>
@@ -150,7 +129,7 @@
           <h2>by Beatrice Warde (1900–1969)</h2>
           <p>Imagine that you have before you a flagon of wine. You may choose your own favourite vintage for this imaginary demonstration, so that it be a deep shimmering crimson in colour. You have two goblets before you. One is of solid gold, wrought in the most exquisite patterns. The other is of crystal-clear glass, thin as a bubble, and as transparent. Pour and drink; and according to your choice of goblet, I shall know whether or not you are a connoisseur of wine. For if you have no feelings about wine one way or the other, you will want the sensation of drinking the stuff out of a vessel that may have cost thousands of pounds; but if you are a member of that vanishing tribe, the amateurs of fine vintages, you will choose the crystal, because everything about it is calculated to reveal rather than hide the beautiful thing which it was meant to contain.</p>
           <div class="figure-wrapper"><figure class="goblet">
-              <img src="images/goblet.png" alt="A crystal goblet" />
+              <img src="../images/goblet.png" alt="A crystal goblet" />
             </figure>
           </div>
           <p>Bear with me in this long-winded and fragrant metaphor; for you will find that almost all the virtues of the perfect wine-glass have a parallel in typography. There is the long, thin stem that obviates fingerprints on the bowl. Why? Because no cloud must come between your eyes and the fiery heart of the liquid. Are not the margins on book pages similarly meant to obviate the necessity of fingering the type-page? Again: the glass is colourless or at the most only faintly tinged in the bowl, because the connoisseur judges wine partly by its colour and is impatient of anything that alters it. There are a thousand mannerisms in typography that are as impudent and arbitrary as putting port in tumblers of red or green glass! When a goblet has a base that looks too small for security, it does not matter how cleverly it is weighted; you feel nervous lest it should tip over. There are ways of setting lines of type which may work well enough, and yet keep the reader subconsciously worried by the fear of ‘doubling’ lines, reading three words as one, and so forth.</p>
@@ -180,9 +159,9 @@
     
     
     <!-- Widowtamer -->
-    <script src="js/vendor/widowtamer-min.js" defer></script>
+    <script src="../js/vendor/widowtamer-min.js" defer></script>
     
-    <script src="js/main.js" defer></script>
+    <script src="../js/main.js" defer></script>
   
   </body>
 </html>

@@ -1,0 +1,295 @@
+/* Undo some of the Layout width bits */
+.section-content {
+  margin: 0 auto;
+  padding: 0 0.5em; }
+
+@media only screen and (min-width: 24.15em) {
+  .section-content {
+    max-width: 98%; } }
+
+@media only screen and (min-width: 43.75em) {
+  .section-content {
+    max-width: 98%; } }
+
+@media only screen and (min-width: 60.25em) {
+  .section-content {
+    max-width: 98%; } }
+
+@media only screen and (min-width: 75em) {
+  .section-content {
+    max-width: 98em; } }
+
+html {
+  background-color: #fbfbf6;
+  color: #3c3d31;
+  font-size: 100%; }
+
+body {
+  padding-top: 5rem; }
+
+body,
+p,
+th,
+td,
+ul,
+li {
+  font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+  font-weight: normal;
+  font-style: normal; }
+  .wf-inactive body, .wf-inactive
+  p, .wf-inactive
+  th, .wf-inactive
+  td, .wf-inactive
+  ul, .wf-inactive
+  li {
+    font-family: Georgia, "New Times Roman", serif; }
+
+.inverse {
+  background-color: #3c3d31;
+  color: #fbfbf6; }
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 38rem;
+  transition: all linear 0.2s;
+  hyphens: auto;
+  font-feature-settings: "liga" 1, "kern" 1; }
+
+/* Variations and variables */
+p {
+  font-size: 1em;
+  line-height: 1.15; }
+  .wf-inactive p {
+    font-size: 1.05em;
+    line-height: 1.125; }
+  @media screen and (min-width: 24.15em) {
+    p {
+      line-height: 1.3; }
+      .wf-inactive p {
+        line-height: 1.2; } }
+  @media (min-width: 60.25em) {
+    p {
+      font-size: 1.125em;
+      line-height: 1.5; }
+      .wf-inactive p {
+        font-size: 1.2em;
+        line-height: 1.475; } }
+  @media (min-width: 75em) {
+    p {
+      font-size: 1.25em; }
+      .wf-inactive p {
+        font-size: 1.32em;
+        line-height: 1.45;
+        word-spacing: 1px; } }
+
+/* Generic header styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+  font-weight: bold; }
+  .wf-inactive h1, .wf-inactive h2, .wf-inactive h3, .wf-inactive h4, .wf-inactive h5, .wf-inactive h6 {
+    font-family: Georgia, "New Times Roman", serif; }
+
+h1 {
+  font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+  font-size: 2em;
+  line-height: .95;
+  margin: 1rem auto;
+  max-width: 50rem; }
+  .wf-inactive h1 {
+    font-family: Georgia, "New Times Roman", serif;
+    letter-spacing: -.5px; }
+  @media screen and (min-width: 24.15em) {
+    h1 {
+      font-size: 2.5em;
+      line-height: 1; } }
+  @media screen and (min-width: 43.75em) {
+    h1 {
+      font-size: 3.25em;
+      max-width: 60rem; }
+      .wf-inactive h1 {
+        font-family: Georgia, "New Times Roman", serif;
+        letter-spacing: normal; } }
+  @media screen and (min-width: 60.25em) {
+    h1 {
+      font-size: 4em;
+      line-height: 1.1;
+      max-width: 70rem; } }
+  @media (min-width: 75em) {
+    h1 {
+      font-size: 5em;
+      max-width: 75rem; }
+      .wf-inactive h1 {
+        letter-spacing: -1px; } }
+
+h2 {
+  font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+  font-size: 1.5em;
+  line-height: 1.15;
+  margin: 0 auto 2rem auto;
+  max-width: 50rem; }
+  .wf-inactive h2 {
+    font-family: Georgia, "New Times Roman", serif;
+    letter-spacing: -.75px; }
+  @media screen and (min-width: 24.15em) {
+    h2 {
+      font-size: 2em; } }
+  @media screen and (min-width: 43.75em) {
+    h2 {
+      font-size: 2.5em;
+      line-height: 1.2;
+      max-width: 60rem; }
+      .wf-inactive h2 {
+        letter-spacing: -1px; } }
+  @media screen and (min-width: 60.25em) {
+    h2 {
+      font-size: 3em;
+      max-width: 70rem; } }
+  @media (min-width: 75em) {
+    h2 {
+      font-size: 3.5em;
+      line-height: 1.25;
+      max-width: 75rem; } }
+
+blockquote {
+  float: right;
+  font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+  font-size: 5.5vw;
+  line-height: 1.1;
+  margin: 0 5vw 1rem .5rem;
+  max-width: 45vw;
+  transition: all linear 0.2s; }
+  .wf-inactive blockquote {
+    font-family: Georgia, "New Times Roman", serif; }
+  blockquote.right {
+    float: right;
+    margin-left: .5rem;
+    margin-right: 5vw; }
+  blockquote.left {
+    float: left;
+    margin-left: 5vw;
+    margin-right: .5rem; }
+  blockquote .well-used {
+    font-size: 1em; }
+  blockquote .invisible {
+    font-size: 1.125em;
+    font-weight: bold; }
+  @media screen and (min-width: 24.15em) {
+    blockquote {
+      line-height: 1;
+      margin: 0 5vw .5rem .5rem;
+      max-width: 47.5vw; }
+      blockquote.right {
+        margin-left: .5rem;
+        margin-right: 5vw; }
+      blockquote.left {
+        margin-left: 5vw;
+        margin-right: .5rem; }
+      blockquote .well-used {
+        font-size: 1.33em; }
+      blockquote .invisible {
+        font-size: 1.55em; } }
+  @media (min-width: 60.25em) {
+    blockquote {
+      line-height: .95;
+      margin: 0 12vw 2rem 2rem;
+      max-width: 29.5vw; }
+      blockquote.right {
+        margin-left: 2rem;
+        margin-right: 12vw; }
+      blockquote.left {
+        margin-left: 12vw;
+        margin-right: 2rem; }
+      blockquote .well-used {
+        font-size: 1.33em;
+        line-height: .75; }
+      blockquote .invisible {
+        font-size: 1.66em;
+        line-height: .75; } }
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%; }
+
+h2 + p {
+  margin-top: 1em; }
+
+/* Section end styles */
+.section-end:after {
+  color: #777;
+  content: "\00a7";
+  display: block;
+  font-family: Georgia, "New Times Roman", serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 1em;
+  text-align: center; }
+
+/* First-line styles */
+.article-detail > p:first-of-type:first-line {
+  font-family: "Plex Serif", Georgia, "New Times Roman", serif; }
+  .wf-inactive .article-detail > p:first-of-type:first-line {
+    font-family: Georgia, "New Times Roman", serif; }
+
+/* Initial Cap styles */
+.article-detail.initial p:first-of-type:first-letter {
+  float: left;
+  padding-right: 0.05em;
+  font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+  font-size: 2.7em;
+  line-height: .9;
+  margin-bottom: -.1em; }
+  .wf-inactive .article-detail.initial p:first-of-type:first-letter {
+    font-family: Georgia, "New Times Roman", serif; }
+  @media screen and (min-width: 43.75em) {
+    .article-detail.initial p:first-of-type:first-letter {
+      font-size: 4.25em; }
+      .wf-inactive .article-detail.initial p:first-of-type:first-letter {
+        font-size: 4.2em; } }
+  @media (min-width: 60.25em) {
+    .article-detail.initial p:first-of-type:first-letter {
+      font-size: 5em;
+      line-height: .925; }
+      .wf-inactive .article-detail.initial p:first-of-type:first-letter {
+        font-size: 4.95em; } }
+
+/* Content end styles */
+.content-area p:last-child:after {
+  color: #777;
+  content: "\2766";
+  display: block;
+  font-family: Georgia, "New Times Roman", serif;
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: 300;
+  line-height: .75;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center; }
+
+/* Goblet and max-width wrapper */
+.figure-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 38em; }
+  @media (min-width: 60.25em) {
+    .figure-wrapper {
+      font-size: 1em; } }
+  @media (min-width: 75em) {
+    .figure-wrapper {
+      font-size: 1.25em; } }
+
+/* CSS shape outline for the goblet */
+.goblet {
+  float: left;
+  margin: 0 1.5rem 0 0;
+  width: 25%;
+  -webkit-shape-outside: polygon(nonzero, 0% 0%, 0% 100%, 60% 100%, 85% 93%, 55% 85%, 55% 55%, 90% 28%, 90% 10%, 80% 0%);
+  shape-outside: polygon(nonzero, 0% 0%, 0% 100%, 60% 100%, 85% 93%, 55% 85%, 55% 55%, 90% 28%, 90% 10%, 80% 0%); }
+  @media screen and (min-width: 60.25em) {
+    .goblet {
+      margin: 0 1.5rem 0 -17.5%;
+      width: 35%;
+      -webkit-shape-outside: polygon(nonzero, 0% 0%, 0% 100%, 60% 100%, 75% 93%, 30% 85%, 30% 55%, 90% 28%, 90% 10%, 80% 0%);
+      shape-outside: polygon(nonzero, 0% 0%, 0% 100%, 60% 100%, 75% 93%, 30% 85%, 30% 55%, 90% 28%, 90% 10%, 80% 0%); } }

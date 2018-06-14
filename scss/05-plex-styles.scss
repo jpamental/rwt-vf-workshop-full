@@ -1,0 +1,225 @@
+
+/* Undo some of the Layout width bits */
+.section-content {
+	margin: 0 auto;
+	padding: 0 0.5em;
+}
+	@media only screen and (min-width: 24.15em) {
+	    .section-content {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 43.75em) {
+	    .section-content {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 60.25em) {
+	    .section-content {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 75em) {
+	    .section-content {
+		    max-width: 98em;
+	    }
+	}
+
+
+html {
+  background-color: #fbfbf6;
+  color: #3c3d31;
+  font-size: 100%;
+}
+
+body {
+  padding-top: 5rem;
+}
+
+body, 
+p, 
+th, 
+td, 
+ul, 
+li {
+	font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+	font-weight: normal;
+  font-style: normal;
+  .wf-inactive & {
+	  font-family: Georgia, "New Times Roman", serif;
+  }
+}
+
+.inverse {
+  background-color: #3c3d31;
+  color: #fbfbf6;
+}
+
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 38rem;
+	transition: all linear 0.2s;
+  hyphens: auto;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+/* Variations and variables */
+p {
+  font-size: 1.125em;
+  line-height: 1.5;
+  .wf-inactive & {
+	  font-size: 1.2em;
+    line-height: 1.475;
+  }
+}
+
+
+/* Generic header styles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+  font-weight: bold;
+  .wf-inactive & {
+	  font-family: Georgia, "New Times Roman", serif;
+  }
+}
+
+h1 {
+	font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+  font-size: 4em;
+  line-height: 1.1;
+  margin: 1rem auto;
+  max-width: 70rem;
+  .wf-inactive & {
+	  font-family: Georgia, "New Times Roman", serif;
+	  letter-spacing: -.5px;
+  }
+}
+
+
+
+
+
+h2 {
+	font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+  font-size: 3em;
+  line-height: 1.2;
+  margin: 0 auto 2rem auto;
+  max-width: 70rem;
+  .wf-inactive & {
+	  font-family: Georgia, "New Times Roman", serif;
+	  letter-spacing: -1px;
+  }
+}
+
+blockquote {
+  float: right;
+	font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+  font-size: 5.5vw;
+  line-height: .95;
+  margin: 0 12vw 2rem 2rem;
+  max-width: 29.5vw;
+	transition: all linear 0.2s; 
+  .wf-inactive & {
+	  font-family: Georgia, "New Times Roman", serif;
+  }
+	&.right {
+  	float: right;
+  	margin-left: 2rem;
+  	margin-right: 12vw;
+	}	
+	&.left {
+  	float: left;
+  	margin-left: 12vw;
+  	margin-right: 2rem;
+	}	
+	.well-used {
+  	font-size: 1.33em;
+    line-height: .75;
+	}
+	.invisible {
+  	font-size: 1.66em;
+  	font-weight: bold;
+    line-height: .75;
+	}
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+h2 + p {
+  margin-top: 1em;
+}
+
+/* Section end styles */
+.section-end:after {
+  color: #777;
+	content: "\00a7";
+	display: block;
+	font-family: Georgia, "New Times Roman", serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-top: 1em;
+	text-align: center;
+}
+
+/* First-line styles */
+.article-detail > p:first-of-type:first-line {
+	font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+  .wf-inactive & {
+	  font-family: Georgia, "New Times Roman", serif;
+  }
+}
+
+/* Initial Cap styles */
+.article-detail.initial p:first-of-type:first-letter {
+	float: left; 
+	padding-right: 0.05em; 
+	font-family: "Plex Serif", Georgia, "New Times Roman", serif;
+	font-size: 5em; 
+  line-height: .925;
+	margin-bottom: -.1em; 
+  .wf-inactive & {
+	  font-family: Georgia, "New Times Roman", serif;
+  	 font-size: 4.95em;
+  }
+}
+
+/* Content end styles */
+.content-area p:last-child:after {
+  color: #777;
+	content: "\2766";
+	display: block;
+	font-family: Georgia, "New Times Roman", serif;
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: 300;
+	line-height: .75;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+/* Goblet and max-width wrapper */
+.figure-wrapper {
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 38em;
+}
+
+/* CSS shape outline for the goblet */
+.goblet {
+  float: left;
+  margin: 0 1.5rem 0 -17.5%;
+  width: 35%;
+  -webkit-shape-outside: polygon(nonzero, 0% 0%, 0% 100%, 60% 100%, 75% 93%, 30% 85%, 30% 55%, 90% 28%, 90% 10%, 80% 0%);
+  shape-outside: polygon(nonzero, 0% 0%, 0% 100%, 60% 100%, 75% 93%, 30% 85%, 30% 55%, 90% 28%, 90% 10%, 80% 0%);
+}
