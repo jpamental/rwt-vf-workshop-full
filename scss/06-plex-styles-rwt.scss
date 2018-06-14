@@ -274,17 +274,6 @@ h2 + p {
 	text-align: center;
 }
 
-/* First-line styles */
-.article-detail > p:first-of-type:first-line {
-	font-family: "Plex Serif", Georgia, "New Times Roman", serif;
-  .wf-inactive & {
-	  font-family: Georgia, "New Times Roman", serif;
-  }
-	@media screen and (min-width: 43.75em) { 
-
-    }
-}
-
 /* Initial Cap styles */
 .article-detail.initial p:first-of-type:first-letter {
 	float: left; 

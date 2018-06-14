@@ -1,0 +1,144 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+  
+    <title>The evolution of typography with variable fonts | Jason Pamental</title>
+  		
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="stylesheet" href="https://variablefonts.monotype.com/MetaVariableDemo-Set.css">
+    <link rel="stylesheet" href="../css/08-meta-styles.css">
+    <!--[if lt IE 9]>
+    	<script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../js/vendor/fontfaceobserver.js"></script>
+    <script type="text/javascript">
+  		(function() {
+  			document.documentElement.className += " wf-inactive"; 
+  	
+  			// Optimization for Repeat Views
+  			if( sessionStorage.foutFontsLoaded ) {
+  				document.documentElement.classList.remove("wf-inactive");
+  				document.documentElement.classList.add("wf-active");
+  				return;
+  			}
+  	
+  			var fontA = new FontFaceObserver("FF Meta VF", {
+  				});
+  				
+  	
+  			Promise.all([fontA.load()]).then(function () {
+  				document.documentElement.classList.remove("wf-inactive");
+  				document.documentElement.classList.add("wf-active");
+  	
+  				// Optimization for Repeat Views
+  				sessionStorage.foutFontsLoaded = true;
+  			});
+  		})();
+  	</script>
+      
+  </head>
+  <body>
+  
+  
+    <!-- Add your site or application content here -->
+    <main class="content-area clearfix">
+      <div class="section-content">
+        <article class="article-detail initial">
+          <header>
+            <h1>The evolution of typography with variable fonts</h1>
+            <h2>Words have power, and typography is their voice</h2>
+            <h3>by Jason Pamental</h3>
+          </header>
+          <figure id="example-ampersand" class="example-ampersand pause">
+            <div class="example-ampersand--thin-thick">&</div>
+            <div class="example-ampersand--thick-thin">&</div>
+            <div class="example-ampersand--middle example-ampersand-pulse">&</div>
+            <div class="example-ampersand--pulse">&</div>
+            <figcaption class="button-control"><button id="play-pause" name="play-pause" class="play-pause pause">Click to </button></figcaption>
+          </figure>
+          <div class="no-support-message">
+            <h3>We’re sorry!</h3>
+            <p>It appears that your browser does not support variable fonts. So while you can read the article, you’re not really seeing it as intended. There are a bunch of browsers that do support them already, including:</p>
+            <ul>
+              <li><a href="https://www.apple.com/safari/">Safari</a> (Mac OS High Sierra, iOS 11+)</li>
+              <li><a href="https://www.google.com/chrome/">Chrome</a> (Mac/Windows, v62+)</li>
+              <li><a href="https://www.microsoft.com/en-us/windows/microsoft-edge">Microsoft Edge</a> (v17+)</li>
+              <li><a href="https://nightly.mozilla.org">Firefox Nightly Build</a> (v62+)</li>
+              <li><a href="https://www.opera.com">Opera</a> (v49+)</li>
+            </ul>
+          </div>
+<p class="intro">For centuries, type has been how we ‘hear’ what we read. It’s also generally understood that typefaces and typography are a core element of branding, of expression, of vocal range. Great typography influences understanding, mood, and meaning in countless ways and is an essential part of design. Unfortunately, for many years after the advent of the web, we were unable to apply all but the most basic of typographic design to online content. With the ability to use real fonts and OpenType features—like ligatures, specific figure sets, fractions, and true kerning—the typographic landscape improved tremendously. But the reality of viewing content on the web dictates that speed is the most critical aspect of design—so we’ve traded typographic ‘vocal range’ for page speed. That means fewer font weights and reduced brand fidelity and voice.</p>
+
+<h2 class="clear">From many, one (paradigm: shifted)</h2>
+  <blockquote class="right"><p>A variable font is a single font that acts as many</p><cite>John Hudson</cite></blockquote>
+<p>The advent of Variable Fonts changes that entire dynamic. As described by John Hudson, a variable font is a single font that acts as many: all the variations of width and weight, slant, and even italics can be contained in a single, highly efficient and compressible font file. What’s more: the format (which is technically part of the OpenType 1.8 specification) is completely extensible. The type designer has complete control over what axes are used, their ranges, and even the definition of new axes. There are currently 5 ‘registered’ axes (width, weight, slant, italics, and optical sizing), but the designer can vary any axis they choose. Some examples include the height of ascenders and descenders, text grade, even serif shape. The possibilities are nearly limitless. By removing the performance barrier, we open the door for more interesting and dynamic design and far greater ability to express the true voice of the brand. All this while maintaining fidelity to the typeface itself: only axes exposed by the type designer can be varied. No artificial distortion allowed.</p>
+
+<h2>Web design, reinvented</h2>
+<figure class="size-comparison">
+  <div class="size-comparison--begin">transform</div>
+  <div class="size-comparison--was">18 files, over 288k</div>
+  <div class="size-comparison--middle">into just</div>
+  <div class="size-comparison--is">1 file<br />84k</div>
+</figure>
+<p>While the technology is still maturing and type designers are working to become more fluent in this new way of working, the promise for design on the web is ground-breaking. The typical scenario would be to constrain any given design to 3-5 different fonts to represent every aspect of a site’s design language and voice—including every permutation for body copy and headings. At its simplest implementation, variable fonts would give us the freedom to use different weights for every level of heading—greatly increasing their clarity and readability.</p>
+
+<p>One could also use slightly narrower character widths for headings or on data-dense displays of information. In fact the entire typographic system could be designed to be proportional: weight and width could become multipliers on the standard body copy settings. Doing so would allow those aspects to scale easily along with the body copy should its settings change based on screen size or user preference. All of this with an accompanying increase in performance due to fewer HTTP requests (fewer font files) and  an overall savings of data to download (though that will vary by font and compression used).</p>
+
+<p>But while these freedoms allow us to be more expressive, some of the really interesting capabilities will help transform the reading experience itself. This page has been set with a new variable font version of <strong>FF Meta</strong>, the classic sans-serif design by Erik Spiekermann first released in 1991. Even with only one axis of variation (weight) of both roman and italic variants, a wonderful range of voice can be achieved with massive gains in performance: 18 files and over 288k replaced with a single file of only 84k.</p>
+
+<h2>Reinvented reading on screen</h2>
+<blockquote class="right">
+  <p>[Meta] has to do more than look pretty: it has to work pretty hard</p>
+  <cite>Erik Spiekermann</cite>
+</blockquote>
+<p>Some of the biggest challenges in creating a good reading experience are tied to the lack of finesse in proportion and fine details. The combination of modern CSS and OpenType features and variations presents a powerful combination. Being able to set features like ligatures and hyphenation based on language, turn hyphenation on and off based on screen size, and even tailor the character width on the smallest screens in order to fit more characters per line without reducing font size can make dramatic improvements in the smoothness and comfort of the reading experience.</p>
+
+<h2>Ready for a close-up</h2>
+<figure class="optical-sizing right">
+  <img src="../images/garamond_6pt.png" alt="Garamond 6pt" />
+  <img src="../images/garamond_72pt.png" alt="Garamond 72pt" />
+  <figcaption>18th century cut of Garamond cut in optical sizes. The first image is at 6pt size, the second is at 72. Note the difference in stroke contrast. It’s much more refined in the larger size.</figcaption>
+</figure>
+<p>Another feature that was common in metal type but lost in translation to photo-typesetting and digital was optical sizing (well, some designers do still create separate optical sizes for different ranges, but it’s rare and somewhat limited). Not as often found on sans-serif designs, but in decades past (in truth, for centuries), it was quite common for the physically smaller sizes of a typeface to be cut with slightly heavier strokes, more open bowls and counters, and in some cases even wider apertures in order to preserve readability. Newspapers in particular found this critical to ensure lines didn’t get lost or letters didn’t suffer too greatly from ink gain.</p>
+
+<p>Optical sizing has made a return in variable fonts, and can be automatically applied where available, or set explicitly by the web designer or developer. As mentioned, it’s not as frequent a feature in sans-serif typefaces like this one, but can be used to quite dramatic effect in higher-stroke-contrast serif designs.</p>
+
+<h2>Polish and poise</h2>
+<p>With the benefits already discussed, the case for variable fonts is pretty compelling. But good typography isn’t all there is to great design. The range of axes like width and weight give us tremendous freedom to embrace more editorial design on the web without having to load an exorbitant number of file assets. And since we already have those few required variable fonts in place, the opportunity is to expose them for use by content publishers themselves. Imagine a role for designers inside the Content Management System (or CMS) where the website is housed. That designer could use some simple controls built into the CMS that would allow them to typeset specific headlines or pull-quotes, enabling a whole new level of design much like what we have in print, without having to write custom code every time.</p>
+
+<h3>We may still be at the dawn of this new era, but it’s future is certainly bright</h3>
+<p>As of May 2018, 3 out of 4 major web browsers already support variable fonts, in addition to both dominant mobile platforms (<a href="https://caniuse.com/#feat=variable-fonts">check support on caniuse.com</a>). With that in mind, we’re ready to start lighting up the web today.</p>
+<p>&nbsp;</p>
+        </article>
+      </div><!--/.section-content-->
+    </main>
+    <footer id="footer" class="footer clearfix" role="contentinfo">
+      <div class="section-content">
+      	<div class="footer-contact h-card">
+  
+      	</div>
+      </div><!--/.section-content-->
+    </footer>
+    
+    
+    
+    
+    <!-- Widowtamer -->
+    <script src="../js/vendor/widowtamer-min.js" defer></script>
+    
+    <script src="../js/main.js" defer></script>
+  
+  </body>
+</html>
