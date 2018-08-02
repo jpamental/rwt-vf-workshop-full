@@ -1,1 +1,4 @@
+# Mac image stores
+.DS_Store
+
 /node_modules
