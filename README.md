@@ -32,7 +32,7 @@ This repository contains all the sample pages from my workshop, along with some 
 - part-05
   - index-plex.html - a page that uses Plex, and brings in font loading management that you can tailor to improve the loading experience with Plex
 - part-06
-  - index.html - a copy of a page I wrote and designed about variable fonts, set using FF Meta for Monotype (originally published on CodePen here: https://codepen.io/jpamental/pen/MGEPEL/)
+  - index.html - a copy of a page I wrote and designed about variable fonts, set using FF Meta from Monotype (originally published on CodePen here: https://codepen.io/jpamental/pen/MGEPEL/)
   - index-plex-rwt.html - the next evolution of the page from part-05, adding in responsive web typography features like a modular scale that reacts to viewport width and adds fallback font styles
   - index-vf.html - the page now using variable fonts and the new custom properties/calculation based typographic system
 - part-07
