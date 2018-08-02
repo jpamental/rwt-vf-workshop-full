@@ -28,4 +28,4 @@ This repository contains all the sample pages from my workshop, along with some 
 ### Pages
 - index.html - This is an example of a 'finished' page that incorporates all the things covered in the course
 - part-04
-- - vf-samples.html - a page that has examples of individual axes of variation, triggered on hover
+ - vf-samples.html - a page that has examples of individual axes of variation, triggered on hover
