@@ -17,7 +17,7 @@ If you want to skip all the 'build tools' you can just edit the files in the `cs
 ## What you'll find here
 This repository contains all the sample pages from my workshop, along with some useful tools and supporting files.
 
-###Supporting Directories:
+### Supporting Directories:
 - CSS - all the compiled CSS for the project. You can edit these directly but you will lose the changes if you then try out the `build` process
 - Fonts - some early versions of variable fonts and Plex, and open-source font from IBM
 - Images - images used in the project (all taken/created by me)
@@ -25,7 +25,7 @@ This repository contains all the sample pages from my workshop, along with some 
 - JS - just a few script files to help enhance font loading and typography
 - SCSS - the source Sass files for the project
 
-###Pages
+### Pages
 - index.html - This is an example of a 'finished' page that incorporates all the things covered in the course
 - part-04
--- vf-samples.html - a page that has examples of individual axes of variation, triggered on hover
+- - vf-samples.html - a page that has examples of individual axes of variation, triggered on hover
